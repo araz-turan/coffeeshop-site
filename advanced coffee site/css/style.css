@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+.center-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #024F25;
+    border-radius: 0 0 5rem 5rem;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    color: #fff;
+}
+nav .logo-text {
+    display: flex;
+    align-items: center;
+}
+nav .logo-text img {
+    position: relative;
+    top: -0.4rem;
+}
+nav .logo-text h3 {
+    margin-left: 0.5rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    cursor: default;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 0.15rem solid #fff;
+    border-radius: 0.15rem;
+    cursor: pointer;
+    transition: all 150ms ease;
+}
+nav ul li:hover::after {
+    opacity: 100;
+}
+nav .sign-log-div {
+    cursor: default;
+}
+nav .sign-log-div a {
+    margin: 0.25rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+nav .sign-log-div .sign-up {
+    color: #fff;
+}
+nav .sign-log-div .log-in {
+    background-color: #fff;
+    color: #000;
+}
+.coffee-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    height: 100%;
+}
+.coffee-text .coffee-box {
+    display: flex;
+    align-items: center;
+}
+.coffee-text .coffee-box img {
+    width: 80%;
+}
+.coffee-text .text-box .texts h1 {
+    color: #fff;
+}
+.coffee-text .text-box .texts p {
+    margin: 2rem 0;
+    color: #8f8f8f;
+}
+.coffee-text .text-box .texts a {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+.coffee-text .text-box .bottom-photo {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.coffee-text .text-box .bottom-photo img {
+    width: 30%;
+    position: absolute;
+    right: 0rem;
+    bottom: -1rem; 
+}
+.menu-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #fff;
+    bottom: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    box-shadow: 0rem 0.25rem 0.25rem #8f8f8f;
+    border-radius: 0.5rem;
+}
+.menu-box div {
+    position: relative;
+    padding: 0.25rem 1.75rem 0.25rem 0;
+    /* width: 100%; */
+    height: 100%;
+    line-height: 1.5rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    /* align-items: start; */
+}
+.menu-box div::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-right: 0.1rem solid #8f8f8f;
+}
+.menu-box h6 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #8f8f8f;
+}
+.menu-box h5 {
+    position: relative;
+    display: flex;
+}
+.menu-box .category-box h5::after {
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    transform: rotate(45deg);
+    border-right: 0.1rem solid #000;
+    border-bottom: 0.1rem solid #000;
+    position: absolute;
+    right: -1rem;
+    bottom: 0.55rem;
+}
+.menu-box .attendence-box h5::after {
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    transform: rotate(45deg);
+    border-right: 0.1rem solid #000;
+    border-bottom: 0.1rem solid #000;
+    position: absolute;
+    right: -1rem;
+    bottom: 0.55rem;
+}
+.menu-box .time-box h5::after {
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    transform: rotate(45deg);
+    border-right: 0.1rem solid #000;
+    border-bottom: 0.1rem solid #000;
+    position: absolute;
+    right: -1rem;
+    bottom: 0.55rem;
+}
+.menu-box a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #76241B;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
